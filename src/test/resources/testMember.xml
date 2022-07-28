@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:context="http://www.springframework.org/schema/context"
+   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+   http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+   <!-- context와 context경로 추가 -->
+
+	<!-- servlet-context.xml은 서버 구동시에 읽히니까 테스트는 서버 구동없이 실행하므로 테스트 xml파일 대신 실행-->
+   <context:component-scan base-package="com.care.root" />
+</beans>
